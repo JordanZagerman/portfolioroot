@@ -1,0 +1,163 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<!-- Makes the site responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/lightbox.min.css">
+</head>
+<body class="body">
+
+<!-- Makes the header for the site-->
+	<header class="mainHeader">
+		<!-- Logo Section -->
+		<!-- RESIZE AND CHANGE TO ACTUAL LOGO LATER -->
+		<a href="../index.html">
+		<img src="../img/logo.png" alt="The logo should have loaded here.">
+		</a>
+		<!-- Navigation -->
+		<nav><ul>
+			<li><a href="../index.html">Home</a></li> <!-- This link is active because the webpage starts on home. Meaning that the home link is an active link from the jump, yah dig. -->
+			<li><a href="about.html">About</a></li>
+			<li class="active"><a href="work.html">Work</a></li>
+			<li><a href="donate.html">Donate</a></li>
+		</ul></nav>
+	</header>
+
+<!-- Galery Section -->
+	<div id="wrapper">
+		<!-- Galery Row 1 Start -->
+		<!-- 
+			KEY
+				href==image location
+				data-title==Title displayed underneath image
+
+				img
+					src==Thumbnail Image (900 x 644)
+					alt==Alternative Text Dsiplayed
+					title==Displayed when hovered over
+		-->		
+		<section class="one-third">
+			<a class="thumbnail-link" 
+				id="lightbox-img" 
+				href="../img/fundraising-1.jpg" 
+				data-lightbox="example-set" 
+				data-title ="Change This To An actual Title">
+				<img class="thumbnail" 
+					src="../img/900x644-1.jpg" 
+					alt="#" 
+					title="#">
+			</a>
+		</section>
+		<section class="one-third">
+			<a class="thumbnail-link" 
+				id="lightbox-img" 
+				href="../img/fundraising-1.jpg" 
+				data-lightbox="example-set" 
+				data-title ="#">
+				<img class="thumbnail" 
+					src="../img/900x644-2.jpg"
+					alt="#" 
+					title="#">
+			</a>
+		</section>
+		<section class="one-third">
+			<a class="thumbnail-link" 
+				id="lightbox-img" 
+				href="../img/fundraising-1.jpg" 
+				data-lightbox="example-set" 
+				data-title ="Change This To An actual Title">
+				<img class="thumbnail" 
+					src="../img/900x644-3.jpg"
+					alt="#" 
+					title="#">
+			</a>
+			</section>
+		<!-- Galery Row 1 End -->
+
+		<!-- Galery Row 2 Start -->
+		<section class="one-third">
+			<a class="thumbnail-link" 
+				id="lightbox-img" 
+				href="../img/fundraising-1.jpg" 
+				data-lightbox="example-set" 
+				data-title ="#">
+				<img class="thumbnail" 
+					src="../img/900x644-4.jpg"
+					alt="#" 
+					title="#">
+			</a>
+		</section>
+		<section class="one-third">
+			<a class="thumbnail-link" 
+				id="lightbox-img" 
+				href="../img/fundraising-1.jpg" 
+				data-lightbox="example-set" 
+				data-title ="Change This To An actual Title">
+				<img class="thumbnail" 
+					src="../img/900x644-1.jpg"
+					alt="#" 
+					title="#">
+			</a>
+		</section>
+		<section class="one-third">
+			<a class="thumbnail-link" 
+				id="lightbox-img" 
+				href="../img/fundraising-1.jpg" 
+				data-lightbox="example-set" 
+				data-title ="#">
+				<img class="thumbnail" 
+					src="../img/900x644-2.jpg"
+					alt="#" 
+					title="#">
+			</a>
+			</section>
+		<!-- Galery Row 2 End -->
+
+		<!-- Galery Row 3 Start -->
+		<section class="one-third">
+			<a class="thumbnail-link" 
+				id="lightbox-img" 
+				href="../img/fundraising-1.jpg" 
+				data-lightbox="example-set" 
+				data-title ="Change This To An actual Title">
+				<img class="thumbnail" 
+					src="../img/900x644-3.jpg"
+					alt="#" 
+					title="#">
+			</a>
+		</section>
+		<section class="one-third">
+			<a class="thumbnail-link" 
+				id="lightbox-img" 
+				href="../img/fundraising-1.jpg" 
+				data-lightbox="example-set" 
+				data-title ="#">
+				<img class="thumbnail" 
+					src="../img/900x644-4.jpg"
+					alt="#" 
+					title="#">
+			</a>
+		</section>
+		<section class="one-third">
+			<a class="thumbnail-link" 
+				id="lightbox-img" 
+				href="../img/fundraising-1.jpg" 
+				data-lightbox="example-set" 
+				data-title ="Change This To An actual Title">
+				<img class="thumbnail" 
+					src="../img/900x644-1.jpg"
+					alt="#" 
+					title="#">
+			</a>
+			</section>
+		<!-- Galery Row 3 End -->
+	</div>
+
+
+<!-- File Reference for Lightbox plugin , must be at the bottom -->
+<script src="../js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+/*
+	Date: November 2017
+	Author: Jordan Zagerman
+*/
+
+/*  
+	*==Selects all elements
+	#==Selects single element declared with attribute
+	.==Selects all elements with attribute
+ */
+
+* {
+	/* Makes images flush with the page borders, by taking away inherent padding and margins */
+	margin: 0;
+	padding: 0;
+}
+
+/* Body Section */
+body {
+	/*background-image: url('img/bg.png');*/
+	background-color: #141414; /*black*/
+	color: #FFFFFF;
+	font-size: 100%; /* Accessibility, Base font is usually around 16px */
+	font-family: Arial, 'Lucida Sans Unicode';
+	line-height: 1.5; /* Really just line spacing, single, double 1.5, etc. */
+	text-align: left;
+}
+
+/* Link Section */
+a {
+	text-decoration: none; /* Takes away underline from links */
+}
+
+/* Links visited */
+a:link, a:visited{
+	color: #F99611; /* orange */
+}
+
+/* Links hovered over */
+a:hover, a:active { /*links hovered over will invert text color to become background color, and turn text white*/
+	background-color: #F99611; /* orange */
+	color: #FFF; /* white */
+
+}
+
+/* Body Class, overall container for content */
+.body {
+	margin: 0 auto; /* Makes everything centered */
+	width: 70%; /* Width of the body */
+	clear: both; /* Ensures no floating elements on the left or right side of the body.*/
+}
+
+/* Logo Section */
+.mainHeader img {
+	width: 30%;
+	height: auto;
+	margin: 2% 0;
+}
+
+.mainHeader img:hover {
+	/* 20% seethrough when hovered over */
+	opacity: .8;
+}
+
+/* Navigation Section */
+.mainHeader nav {
+	background-color: #2F2F2F; /* lighter black */
+	height: 40px;
+	box-shadow: 0px 5px 15px #888888;
+	border-radius: 5px;
+	-moz-border-radius: 5px; /* Ensures visible borders for Mozilla  */
+	-webkit-border-radius: 5px; /* Ensures visible borders for browesers based on webkit */
+}
+
+/* Navigation Overall List Style */
+.mainHeader nav ul {
+	list-style: none;  /* Gets rid of bullets infront of list items */
+	margin: 0 auto;  /* The logo above already has a vertical margin of 2% */
+}
+
+/* Navigation Specific List Item Style */
+.mainHeader nav ul li {
+	float: left; /* Each item will push the other to the left */
+	display: inline;  /* Each list item will show up in order horizontally "inline"*/
+}
+
+ /* All of the Links in Navigation, Visited will have the same style */
+.mainHeader nav a:link, .mainHeader nav a:visited {
+	color: #FFF;  /* Link Color*/
+	display: inline-block;  /* like inline, but these can have a width and height */
+	padding: 10px 25px; /* [bottom/top left/right] padding for the block elements */
+	height: 20px; /* Nav has 40 px height - 10px paddding on top and bottom */
+}
+
+/*Navigation Bar Links, esspecially the ones that are active, meaning the user is on that page.*/
+.mainHeader nav a:hover, .mainHeader nav a:active, 
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+	background-color: #F99611; /*orange*/
+	color: #FFF; /* white text color */
+	text-shadow: none;
+}
+
+/* styles the link box  with rounded corners*/
+.mainHeader nav ul li a {
+	border-radius: 5px;
+	-moz-border-radius: 5px; /* Ensures visible borders for Mozilla  */
+	-webkit-border-radius: 5px; /* Ensures visible borders for browesers based on webkit */
+}
+
+/* container for all of the main articles, not the sidebar */
+.mainConent {
+	line-height: 25px;
+	border-radius: 5px;
+	-moz-border-radius: 5px; /* Ensures visible borders for Mozilla  */
+	-webkit-border-radius: 5px; /* Ensures visible borders for browesers based on webkit */
+}
+
+/* actual articles */
+.content {
+	width: 70%; /* leaving room for the sidebars */
+	float: left; /* so the sidebar can push it */
+}
+
+/*specifically the top article*/
+.topContent {
+	background-color: #1C1C1C; /* lighter black */
+	border-radius: 5px;
+	-moz-border-radius: 5px; /* Ensures visible borders for Mozilla  */
+	-webkit-border-radius: 5px; /* Ensures visible borders for browesers based on webkit */
+	padding: 3% 5%; /*top/bottom  sides*/
+	margin-top: 2%; /* creates distance from navigation */
+}
+
+/*specifically the second article*/
+.secondContent {
+	background-color: #1C1C1C; /* lighter black */
+	border-radius: 5px;
+	-moz-border-radius: 5px; /* Ensures visible borders for Mozilla  */
+	-webkit-border-radius: 5px; /* Ensures visible borders for browesers based on webkit */
+	padding: 3% 5%; /*top/bottom  sides*/
+	margin-top: 2%; /* creates distance from topContent */
+}
+
+/* Article Footer Section */
+.postInfo {
+	font-style: italic;
+	color: #999; /* grey */
+	font-size: 90%; /* slightly smaller than average */
+}
+
+/* Sidebar Section */
+
+/* Specifically Top Sidebar */
+.topSidebar {
+	width: 21%;	/* 21+3[marginleft]+6[padding on both sides] = 30, mainContent is 70, adding up so the nav alligns with the sidebar */
+	margin-left: 3%; /* creates whitespace distance from articles */
+	padding: 2% 3%; /*top/bottom   sides*/
+	margin-top: 1.5%;
+	margin-bottom: 2%; /* creates whitespace from elements beneath*/
+	float: left; /* pushes left */
+	background-color: #1C1C1C; /* lighter black */
+	border-radius: 5px;
+	-moz-border-radius: 5px; /* Ensures visible borders for Mozilla  */
+	-webkit-border-radius: 5px; /* Ensures visible borders for browesers based on webkit */
+}
+
+/* Specifically Middle Sidebar */
+.middleSidebar {
+	width: 21%;	/* 21+3[marginleft]+6[padding on both sides] = 30, mainContent is 70, adding up so the nav alligns with the sidebar */
+	margin-left: 3%; /* creates whitespace distance from articles */
+	padding: 2% 3%; /*top/bottom   sides*/
+	margin-bottom: 2%; /* creates whitespace from elements beneath*/
+	float: left; /* pushes left */
+	background-color: #1C1C1C; /* lighter black */
+	border-radius: 5px;
+	-moz-border-radius: 5px; /* Ensures visible borders for Mozilla  */
+	-webkit-border-radius: 5px; /* Ensures visible borders for browesers based on webkit */
+}
+
+/* Specifically Bottom Sidebar */
+.bottomSidebar {
+	width: 21%;	/* 21+3[marginleft]+6[padding on both sides] = 30, mainContent is 70, adding up so the nav alligns with the sidebar */
+	margin-left: 3%; /* creates whitespace distance from articles */
+	padding: 2% 3%; /*top/bottom   sides*/
+	margin-bottom: 2%; /* creates whitespace from elements beneath*/
+	float: left; /* pushes left */
+	background-color: #1C1C1C; /* lighter black */
+	border-radius: 5px;
+	-moz-border-radius: 5px; /* Ensures visible borders for Mozilla  */
+	-webkit-border-radius: 5px; /* Ensures visible borders for browesers based on webkit */
+}
+
+/*Footer Section, yah dig*/
+
+/* container for footer text */
+.mainFooter {
+	width: 100%; /*full page length*/
+	height: 40px; /* same as the nav bar, yah dig */
+	float: left;
+	border-radius: 5px;
+	-moz-border-radius: 5px; /* Ensures visible borders for Mozilla  */
+	-webkit-border-radius: 5px; /* Ensures visible borders for browesers based on webkit */
+	background-color: #2F2F2F;	/* same color as navigation */
+	margin-top: 2%; /* creates distance from articles and sidebar */
+	margin-bottom: 2%; /* creates distance from the absolute bottom of the page */
+}
+ /* text of footer */
+.mainFooter p {
+	width: 92%; /* text won't take up the whole grey box */
+	margin: 1% auto; /* top/bottom  sides [centers the text] */
+	color: #939393; /* white */
+}
+
+/* Gallery Section */
+
+#wrapper {
+	/* centers the wrapper */
+	margin: 0 auto;
+}
+
+img.thumbnail {
+	/* Displays image like a paragraph, with a new line */
+	display: block;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	/* makes horizontal margins slightly smaller */
+	margin-bottom: -4px;
+}
+
+.one-third {
+	width: 29%;
+	float: left;
+	margin: 2%
+}
+
+img.thumbnail:hover {
+	/* 20% seethrough when hovered over */
+	opacity: .8;
+}
+
+/*Makes the site responsive, only coding changes, other variables stay the same*/
+@media only screen and (min-width: 150px) and (max-width: 600px)
+{
+	/* Overall container for content */
+	.body {
+		width: 90%; /* There is no more need for a sidebar*/
+	}
+
+/* Upper Section */
+
+	/* Logo  */
+	.mainHeader img {
+		width: 100%; /* Take up the whole mobile screen */
+	}
+	/* Navigation Section */
+	.mainHeader nav {
+		height: 160px; /* 4x as tall as the desktop header. Since the mobile header will be vertical */
+	}
+
+	/* Navigation Overall List Style */
+	.mainHeader nav ul {
+		padding-left: 0; /* so everything starts from the left side, flush with the margin */
+	}
+
+	/* Navigation Specific List Item Style */
+	.mainHeader nav ul li {
+		width: 100%; /* so the link takes up the whole container */
+		text-align: center;  /* centers the text */
+	}
+
+	 /* All of the Links in Navigation, Visited will have the same style */
+	.mainHeader nav a:link, .mainHeader nav a:visited {
+		display: block; /* hover/sected page color shows across the whole container */
+	}
+
+/* Content Section */
+
+	/* actual articles */
+	.content {
+		width: 100%; /* no more sidebar, use whole width of the page, yah dig*/
+		margin: 2%; /* stylistically looks better */
+	}
+
+	/* Article footer, author credits */
+	.postInfo {
+		display: none; /*stylistic choice, less real estate for content, so no need for author info.*/
+	}
+
+	/*specifically the top article*/
+	.topContent {
+		margin-top: 3%; /* stylistic margin change */
+		margin-bottom: 4% /* stylistic margin change */
+	}
+
+	/*specifically the second article*/
+	.secondContent {
+		margin-top: 3%; /* stylistic margin change */
+	}
+
+/* Sidebar Section */
+
+	.topSidebar, .middleSidebar, .bottomSidebar {
+	width: 94%;	/* 21+3[marginleft]+6[padding on both sides] = 30, mainContent is 70, adding up so the nav alligns with the sidebar */
+	margin-left: 2%; /* creates whitespace distance from articles */
+	}
+/*Gallery Section*/
+/* Displays 2 images per row when the screen is smaller */
+@media screen and (max-width: 768px) {
+	.one-third {
+		width: 48%;
+		margin: 1%;
+	}
+
+/* Displays 1 image per row when the screen is smallest */
+@media screen and (max-width: 480px) {
+	.one-third {
+		width: 98%;
+		margin: 1%;
+	}
+}
+
+
+}
