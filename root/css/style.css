@@ -141,6 +141,10 @@ a:hover, a:active { /*links hovered over will invert text color to become backgr
 	margin-top: 2%; /* creates distance from topContent */
 }
 
+.linklessTitle {
+	color: #F99611; /* orange */
+}
+
 /* Article Footer Section */
 .postInfo {
 	font-style: italic;
