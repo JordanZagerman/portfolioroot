@@ -66,7 +66,7 @@ a:hover, a:active { /*links hovered over will invert text color to become backgr
 .mainHeader nav {
 	background-color: #2F2F2F; /* lighter black */
 	height: 40px;
-	box-shadow: 0px 5px 15px #888888;
+	box-shadow: 0px 5px 15px #606060;
 	border-radius: 5px;
 	-moz-border-radius: 5px; /* Ensures visible borders for Mozilla  */
 	-webkit-border-radius: 5px; /* Ensures visible borders for browesers based on webkit */
