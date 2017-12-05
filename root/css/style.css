@@ -24,6 +24,7 @@ body {
 	font-family: Arial, 'Lucida Sans Unicode';
 	line-height: 1.5; /* Really just line spacing, single, double 1.5, etc. */
 	text-align: left;
+	overflow: auto;
 }
 
 /* Link Section */
@@ -36,18 +37,22 @@ a:link, a:visited{
 	color: #F99611; /* orange */
 }
 
-/* Links hovered over */
-a:hover, a:active { /*links hovered over will invert text color to become background color, and turn text white*/
+/* Links of the page you are on in nav */
+a:active { /*links hovered over will invert text color to become background color, and turn text white*/
 	background-color: #F99611; /* orange */
 	color: #FFF; /* white */
-
 }
-
+/* Links hovered over */
+a.textLink:hover {
+	background-color: #F99611; /* orange */
+	color: #FFF; /* white */
+}
 /* Body Class, overall container for content */
 .body {
 	margin: 0 auto; /* Makes everything centered */
 	width: 70%; /* Width of the body */
 	clear: both; /* Ensures no floating elements on the left or right side of the body.*/
+	overflow: auto;
 }
 
 /* Logo Section */
@@ -141,8 +146,17 @@ a:hover, a:active { /*links hovered over will invert text color to become backgr
 	margin-top: 2%; /* creates distance from topContent */
 }
 
+/* Title of articles that do not link */
 .linklessTitle {
-	color: #F99611; /* orange */
+	color: #FFF; /* orange */
+}
+
+.question {
+	font-style: italic;
+}
+
+.answer {
+    font-weight: bold;
 }
 
 /* Article Footer Section */
