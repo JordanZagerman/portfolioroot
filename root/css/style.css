@@ -151,19 +151,26 @@ a.textLink:hover {
 	color: #FFF; /* orange */
 }
 
-.question {
-	font-style: italic;
-}
+/* Article Section */
 
-.answer {
-    font-weight: bold;
-}
-
-/* Article Footer Section */
+/* Article footers */
 .postInfo {
 	font-style: italic;
 	color: #999; /* grey */
 	font-size: 90%; /* slightly smaller than average */
+}
+.subHeader {
+	text-align: center;
+}
+
+/* Questions for FAQs */
+.question {
+	font-style: italic;
+}
+
+/* Answers for FAQs */
+.answer {
+    font-weight: bold;
 }
 
 /* Sidebar Section */
