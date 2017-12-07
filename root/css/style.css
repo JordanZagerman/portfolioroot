@@ -68,6 +68,7 @@ a.textLink:hover {
 }
 
 /* Navigation Section */
+
 .mainHeader nav {
 	background-color: #2F2F2F; /* lighter black */
 	height: 40px;
@@ -75,6 +76,9 @@ a.textLink:hover {
 	border-radius: 5px;
 	-moz-border-radius: 5px; /* Ensures visible borders for Mozilla  */
 	-webkit-border-radius: 5px; /* Ensures visible borders for browesers based on webkit */
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0; left: 0; right: 0;
 }
 
 /* Navigation Overall List Style */
@@ -181,7 +185,7 @@ a.textLink:hover {
 	margin-left: 3%; /* creates whitespace distance from articles */
 	padding: 2% 3%; /*top/bottom   sides*/
 	margin-top: 1.5%;
-	margin-bottom: 2%; /* creates whitespace from elements beneath*/
+	margin-bottom: 1.5%; /* creates whitespace from elements beneath*/
 	float: left; /* pushes left */
 	background-color: #1C1C1C; /* lighter black */
 	border-radius: 5px;
@@ -194,7 +198,7 @@ a.textLink:hover {
 	width: 21%;	/* 21+3[marginleft]+6[padding on both sides] = 30, mainContent is 70, adding up so the nav alligns with the sidebar */
 	margin-left: 3%; /* creates whitespace distance from articles */
 	padding: 2% 3%; /*top/bottom   sides*/
-	margin-bottom: 2%; /* creates whitespace from elements beneath*/
+	margin-bottom: 1.5%; /* creates whitespace from elements beneath*/
 	float: left; /* pushes left */
 	background-color: #1C1C1C; /* lighter black */
 	border-radius: 5px;
