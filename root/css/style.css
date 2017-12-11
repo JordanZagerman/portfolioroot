@@ -15,6 +15,9 @@
 	padding: 0;
 }
 
+/* Keeps pages from scrollbar jumping, by making an ever present scroll bar */
+html { overflow-y: scroll; }
+
 /* Body Section */
 body {
 	/*background-image: url('img/bg.png');*/
@@ -37,13 +40,8 @@ a:link, a:visited{
 	color: #F99611; /* orange */
 }
 
-/* Links of the page you are on in nav */
-a:active { /*links hovered over will invert text color to become background color, and turn text white*/
-	background-color: #F99611; /* orange */
-	color: #FFF; /* white */
-}
-/* Links hovered over */
-a.textLink:hover {
+/* Text links hovered over/and or clicked */
+a.textLink:hover active{/*links hovered over and/or clicked will invert text color to become background color, and turn text white*/
 	background-color: #F99611; /* orange */
 	color: #FFF; /* white */
 }
