@@ -24,7 +24,7 @@ body {
 	background-color: #141414; /*black*/
 	color: #FFFFFF;
 	font-size: 100%; /* Accessibility, Base font is usually around 16px */
-	font-family: Arial, 'Lucida Sans Unicode';
+	font-family: arial, serif;
 	line-height: 1.5; /* Really just line spacing, single, double 1.5, etc. */
 	text-align: left;
 	overflow: auto;
@@ -37,12 +37,17 @@ a {
 
 /* Links visited */
 a:link, a:visited{
-	color: #F99611; /* orange */
+	color: #FE9600; /* orange */
 }
 
 /* Text links hovered over/and or clicked */
-a.textLink:hover active{/*links hovered over and/or clicked will invert text color to become background color, and turn text white*/
-	background-color: #F99611; /* orange */
+a.textLink:hover{/*links hovered  will invert colors.*/
+	background-color: #FE9600; /* orange */
+	color: #FFF; /* white */
+}
+
+a.textLink:active{/*links clicked will turn everything white.*/
+	background-color: #FFF; /* orange */
 	color: #FFF; /* white */
 }
 /* Body Class, overall container for content */
@@ -70,7 +75,7 @@ a.textLink:hover active{/*links hovered over and/or clicked will invert text col
 .mainHeader nav {
 	background-color: #2F2F2F; /* lighter black */
 	height: 40px;
-	box-shadow: 0px 5px 15px #606060;
+	box-shadow: 0px 3px 5px #444444;
 	border-radius: 5px;
 	-moz-border-radius: 5px; /* Ensures visible borders for Mozilla  */
 	-webkit-border-radius: 5px; /* Ensures visible borders for browesers based on webkit */
@@ -89,6 +94,7 @@ a.textLink:hover active{/*links hovered over and/or clicked will invert text col
 .mainHeader nav ul li {
 	float: left; /* Each item will push the other to the left */
 	display: inline;  /* Each list item will show up in order horizontally "inline"*/
+	font-weight: bold;
 }
 
  /* All of the Links in Navigation, Visited will have the same style */
@@ -100,11 +106,16 @@ a.textLink:hover active{/*links hovered over and/or clicked will invert text col
 }
 
 /*Navigation Bar Links, esspecially the ones that are active, meaning the user is on that page.*/
-.mainHeader nav a:hover, .mainHeader nav a:active, 
+.mainHeader nav a:hover, 
 .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
-	background-color: #F99611; /*orange*/
+	background-color: #FE9600; /*orange*/
 	color: #FFF; /* white text color */
 	text-shadow: none;
+}
+
+.mainHeader nav a:active {
+	background-color: #FFF; /* orange */
+	color: #FFF; /* white */
 }
 
 /* styles the link box  with rounded corners*/
@@ -172,7 +183,7 @@ a.textLink:hover active{/*links hovered over and/or clicked will invert text col
 
 /* Answers for FAQs */
 .answer {
-    font-weight: bold;
+	font-size: 105%;  /* slightly larger than average */
 }
 
 /* Sidebar Section */
@@ -228,6 +239,7 @@ a.textLink:hover active{/*links hovered over and/or clicked will invert text col
 	-moz-border-radius: 5px; /* Ensures visible borders for Mozilla  */
 	-webkit-border-radius: 5px; /* Ensures visible borders for browesers based on webkit */
 	background-color: #2F2F2F;	/* same color as navigation */
+	box-shadow: 0px 3px 5px #444444;
 	margin-top: 2%; /* creates distance from articles and sidebar */
 	margin-bottom: 2%; /* creates distance from the absolute bottom of the page */
 }
