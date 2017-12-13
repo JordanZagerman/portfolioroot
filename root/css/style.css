@@ -226,6 +226,7 @@ a.textLink:active{/*links clicked will turn everything white.*/
 	border-radius: 5px;
 	-moz-border-radius: 5px; /* Ensures visible borders for Mozilla  */
 	-webkit-border-radius: 5px; /* Ensures visible borders for browesers based on webkit */
+	overflow: auto;
 }
 
 /*Footer Section, yah dig*/
@@ -276,6 +277,13 @@ img.thumbnail {
 img.thumbnail:hover {
 	/* 20% seethrough when hovered over */
 	opacity: .8;
+}
+
+/* Donation Section */
+
+.donor {
+	font-size: 105%;
+	margin-left: 5%;
 }
 
 /*Makes the site responsive, only coding changes, other variables stay the same*/
