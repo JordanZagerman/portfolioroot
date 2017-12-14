@@ -172,6 +172,14 @@ a.textLink:active{/*links clicked will turn everything white.*/
 	color: #999; /* grey */
 	font-size: 90%; /* slightly smaller than average */
 }
+
+/* Inside Article */
+
+.paragraph {
+	display: inline-block; /* Necessary for text-indent to work */
+	text-indent: 7%; /*Indentation of paragraphs at the beginning. Still need to type a tab.*/
+}
+
 .subHeader {
 	text-align: center;
 }
